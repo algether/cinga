@@ -7,7 +7,7 @@ fn main() {
         .read_line(&mut words_count)
         .expect("Failed to read the line");
 
-    let words_count_int: u32 = words_count.trim().parse().expect("Please type a number!");
+    let words_count_int: u32 = words_count.trim().parse().expect("Please type a number as integer type!");
     let mut counter: u32 = 1;
     while counter <= words_count_int {
         let mut user_string = String::new();
